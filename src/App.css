@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* =============  Scrollbar starts  ============= */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(233, 233, 233);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background: rgb(179, 218, 255);
+}
+/* =============  Scrollbar ends  ============= */
+
+
+.app {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding-top: 20rem;
+  height: 100vh;
+  background-color: aliceblue;
+}
+
+.container {
+  position: relative;
+  width: 10rem;
+}
+
+.container input {
+  padding: 1rem 2rem;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgb(179, 218, 255);
+  box-shadow: 0 1px 1px rgb(234, 234, 234);
+  font-size: 1rem;
+  color: #333;
+}
+
+.options {
+  position: absolute;
+  top: 2.4rem;
+  left: 2rem;
+  width: 12rem;
+  overflow-y: auto;
+  background-color: white;
+  border: 1px solid rgb(179, 218, 255);
+  border-top: none;
+  z-index: 1;
+  border-radius: 5px;
+  border-top: 1px solid rgb(179, 218, 255);
+  font-size: 0.8rem;
+  padding: 0.3rem 0;
+}
+
+.options > div {
+  padding: 8px;
+  /* border-top: 1px solid rgb(179, 218, 255); */
+  cursor: pointer;
+  margin: 0 0.3rem;
+  border-radius: 5px;
+}
+
+.options > div:first-child {
+  border-top: none;
+}
+
+.options > div:hover {
+  background-color: rgb(238, 247, 255);
+}
+
